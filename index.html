@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="description" content="This Is Description For My First Page"/>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="index_style.css">
+  </head>
+<!-- ************************************************ -->
+<body >
+
+  <div class="w-75 my-5 mx-auto">
+
+    <label class="text-primary fw-bold">Product Name</label>
+    <input id="pNameId" class="form-control my-3">
+
+    <label class="text-primary fw-bold">Product Price</label>
+    <input id="pPriceId" class="form-control my-3">
+
+    <label class="text-primary fw-bold">Product Category</label>
+    <input id="pCatId" class="form-control my-3">
+
+    <label class="text-primary fw-bold">Product Description</label>
+    <textarea id="pDescId" class="form-control my-3"></textarea>
+
+    <button id="addBtn" onclick="addProduct()" class="btn btn-primary">Add Product</button>
+    <button id="updateBtn" onclick="updateProduct()"   class="btn btn-warning ">Update Product</button>
+  </div>
+
+  <input oninput="searchProduct(this.value)" placeholder="search Product" class="form-control w-50 my-5 mx-auto">
+  <table class="my-5 table w-75 mx-auto">
+
+    <thead class="text-primary text-center">
+      <th class="fw-bold">Index</th>
+      <th class="fw-bold">Website Name</th>
+      <th class="fw-bold">Price</th>
+      <th class="fw-bold">Category</th>
+      <th class="fw-bold">Description</th>
+      <th class="text-warning fw-bold">Update</th>
+      <th class="text-danger fw-bold">Delete</th>
+      
+    </thead>
+
+    <tbody id="tBody" class="text-center">
+
+
+
+    </tbody>
+
+  </table>
+
+<script src="mine.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

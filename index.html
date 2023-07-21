@@ -12,48 +12,51 @@
   </head>
 <!-- ************************************************ -->
 <body >
+<section class="interface position-relative py-5 ">
+ 
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h1 class=" position-relative py-2">Bookmarker</h1>
+    <div class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
 
-  <div class="w-75 my-5 mx-auto">
+    <h2>
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
 
-    <label class="text-primary fw-bold">Product Name</label>
-    <input id="pNameId" class="form-control my-3">
+    <div class="site-name w-100 d-flex flex-column justify-content-center">
+      <label class="text-muted fw-bold fw-semibold"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+      <input type="text" id="NameId" placeholder="Bookmark Name" class="form-control my-3">
+    </div>
+    <div class="site-name w-100 d-flex flex-column justify-content-center">
+    <label class="text-muted fw-bold fw-semibold"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+     <input id="URLId" type="url" placeholder="Website URL" class="form-control my-3">
+    </div> 
 
-    <label class="text-primary fw-bold">Product Price</label>
-    <input id="pPriceId" class="form-control my-3">
-
-    <label class="text-primary fw-bold">Product Category</label>
-    <input id="pCatId" class="form-control my-3">
-
-    <label class="text-primary fw-bold">Product Description</label>
-    <textarea id="pDescId" class="form-control my-3"></textarea>
-
-    <button id="addBtn" onclick="addProduct()" class="btn btn-primary">Add Product</button>
-    <button id="updateBtn" onclick="updateProduct()"   class="btn btn-warning ">Update Product</button>
+    <button id="addBtn" onclick="add_Date()" class="btn btn-danger py-2 px-3 mx-auto ">Submit</button>
   </div>
-
-  <input oninput="searchProduct(this.value)" placeholder="search Product" class="form-control w-50 my-5 mx-auto">
+</div>
   <table class="my-5 table w-75 mx-auto">
 
     <thead class="text-primary text-center">
       <th class="fw-bold">Index</th>
       <th class="fw-bold">Website Name</th>
-      <th class="fw-bold">Price</th>
-      <th class="fw-bold">Category</th>
-      <th class="fw-bold">Description</th>
-      <th class="text-warning fw-bold">Update</th>
+      <th class="text-warning fw-bold">Visit</th>
       <th class="text-danger fw-bold">Delete</th>
       
     </thead>
 
     <tbody id="tBody" class="text-center">
 
-
-
     </tbody>
 
   </table>
+</section>
 
-<script src="mine.js"></script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script> 
+<script src="mine.js"></script>
 </body>
 </html>

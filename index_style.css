@@ -1,81 +1,68 @@
+/* img
+{
+  width: 10%;
+position: absolute;
+top: 0;
+left: 0;
+} */
 
-body {
-  font-family: "PT Sans Caption", sans-serif;
+/* .minDiv
+{
+background-image: url(imgs/meal-1.jpg);
+width: 50%;
+height: 400px;
+margin: auto;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
 }
 
-::selection {
-  background-color: #fec260;
-  color: #352e28;
+img
+{
+  cursor: pointer;
+} */
+
+body
+{
+    font-family: "segoe ui light";
 }
 
-section {
-  min-height: 100vh;
-  background-color: #f7ecde;
+.item-caption
+{
+    bottom: 15%;
+    width: 80%;
+    left: 10%;
 }
 
-section h1 {
-  font-size: 50px;
-  font-family: "Pacifico", cursive;
-  color: #352e28;
-  isolation: isolate;
+img
+{
+    cursor: pointer;
 }
 
-section h1::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 25%;
-  left: 0;
-  bottom: 10px;
-  background-color: #fec260;
-  transition: height 350ms;
-  z-index: -1;
+.layerParent
+{
+    z-index: 99999999;
+    background-color: rgba(0,0,0,0.5);
 }
 
-section h1:hover::before {
-  height: 50%;
-}
-
-.bookmark-body {
-  border-width: 2px 0 2px 0;
-  border-style: dotted;
-  border-color: #352e28;
-}
-
-.bookmark-body h2 {
-  font-family: "Righteous", cursive;
-  font-size: 25px;
-  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #d99c39;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem #fec26055;
+.layerContent
+{
+    width: 50%;
+    height: 500px;
+    background-image: url(portfolio-1.jpg);
+    background-size: 100% 100%;
 }
 
 
-table {
-  vertical-align: middle !important;
-}
 
-.box-info {
-  background-color: #0007;
-}
 
-.box-conent {
-  width: 500px;
-  z-index: 10;
-}
 
-.box-conent p {
-  font-family: "Bree Serif", serif;
-  font-size: 21px;
-  line-height: 1.3;
-  color: #352e28;
-}
+
+
+
+
+
+
+
+
 

@@ -1,68 +1,40 @@
-/* img
-{
-  width: 10%;
-position: absolute;
-top: 0;
-left: 0;
-} */
-
-/* .minDiv
-{
-background-image: url(imgs/meal-1.jpg);
-width: 50%;
-height: 400px;
-margin: auto;
-background-repeat: no-repeat;
-background-size: 100% 100%;
-
-}
-
-img
-{
-  cursor: pointer;
-} */
 
 body
 {
-    font-family: "segoe ui light";
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.item-caption
-{
-    bottom: 15%;
-    width: 80%;
-    left: 10%;
+#home {
+    height: 75vh;
 }
 
-img
+h1 {
+    color: #17a2b8;
+}
+
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.sign
 {
     cursor: pointer;
 }
-
-.layerParent
-{
-    z-index: 99999999;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.layerContent
-{
-    width: 50%;
-    height: 500px;
-    background-image: url(portfolio-1.jpg);
-    background-size: 100% 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
